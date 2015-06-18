@@ -1,5 +1,5 @@
 /**
- * Created by benjamin on 6/17/15.
+ * 6/17/15.
  */
 public class Sandbox {
     public static void main(String[] args){

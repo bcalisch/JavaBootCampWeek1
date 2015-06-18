@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 /**
- * Created by benjamin on 6/18/15.
+ * 6/18/15.
  */
 public class BetterSortLoop {
 

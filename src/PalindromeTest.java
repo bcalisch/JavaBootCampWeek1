@@ -1,7 +1,7 @@
 import com.sun.org.apache.xpath.internal.operations.Bool;
 
 /**
- * Created by benjamin on 6/18/15.
+ * 6/18/15.
  * Palindrome Test (RACECAR)-- (if word[i] == word[word.length -(i+1)]) then so far so good)
  */
 public class PalindromeTest {

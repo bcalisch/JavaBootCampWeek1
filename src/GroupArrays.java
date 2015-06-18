@@ -1,13 +1,14 @@
 import java.util.Arrays;
 
 /**
+ * 06/17/2015
  * TODO
- * Make a git repo for each week, and add a file for each Exercise
- * Find Lowest Age --Basically Done
- * Sort the ages ascending (Build another array that has the ages sorted for you)--Done
- * GroupAges Build 3 different arrays:  Minor (People under 18), Major (People >=18, <65), Senior(>=65)>--Next
- * Palindrome Test (RACECAR)-- (if word[i] == word[word.length -(i+1)]) then so far so good)
- * Take in a sentence, and capitalize the very first letter of every word (CapitaliseSentenceTest)--Basically done
+ * --Make a git repo for each week, and add a file for each Exercise
+ * --Find Lowest Age --Basically Done
+ * --Sort the ages ascending (Build another array that has the ages sorted for you)--Done
+ * --GroupAges Build 3 different arrays:  Minor (People under 18), Major (People >=18, <65), Senior(>=65)>--Next
+ * --Palindrome Test (RACECAR)-- (if word[i] == word[word.length -(i+1)]) then so far so good)
+ * --Take in a sentence, and capitalize the very first letter of every word (CapitaliseSentenceTest)--Basically done
  *
  *
  */
