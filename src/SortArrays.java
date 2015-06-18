@@ -13,7 +13,7 @@
 public class SortArrays {
 
     public static void main(String[] args){
-        int age[] = new int[]{101,5,1,3,2,0,19, 5, 2, 32, 25, 56, 12,56, 20, 22, 19, 54, 22,65};
+        int age[] = new int[]{101,5,1,3,2,2,19, 5, 2, 32, 25,1, 56,0, 19,12,56,0, 20, 22, 19, 54, 22,65};
         int sortedAge[] = new int[age.length];
         int placeHolder;
         int i;
@@ -21,9 +21,10 @@ public class SortArrays {
 
 
         //Start by setting the VALUE of each place in the array as -1 (in case we are dealing with babies)
-        for ( i = 0; i < sortedAge.length; i++) {
+       for ( i = 0; i < sortedAge.length; i++) {
             sortedAge[i] = -1;
-        }
+       }
+
         //Now go through the original array twice, one to get the number to be sorted, and another
         //time to determine which spot in the second array the age belongs.
         for (i = 0; i < age.length ; i++) {
@@ -31,8 +32,8 @@ public class SortArrays {
 
 
             //For each loop determining the index to place the number
-            for (int anAge : age) {
-                if (age[i] > anAge) {
+            for (int j : age) {
+                if (age[i] > j) {
                     placeHolder++;
                 }
                 //While loop to handle duplicates.
