@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * TODO
  * Make a git repo for each week, and add a file for each Exercise
@@ -12,61 +14,59 @@
 public class GroupArrays {
     public static void main(String[] args){
         int age[] = new int[]{101,5,1,3,2,0,19, 5,18, 2, 32, 25, 56, 12,56, 20, 22, 19, 54, 22,65};
-        int minor[] = new int[age.length];
-        int major[] = new int[age.length];
-        int senior[] = new int[age.length];
         int i;
-        String majorAge ="";
-        String minorAge ="";
-        String seniorAge ="";
+        int majorNum = 0;
+        int minorNum =0;
+        int seniorNum =0;
 
-        //Go through the three arrays and initialize with -1s
-        for( i = 0; i<minor.length; i++){
-            minor[i] = -1;
-        }
-        for( i = 0; i<major.length; i++){
-            major[i] = -1;
-        }
-        for( i = 0; i<senior.length; i++){
-            senior[i] = -1;
-        }
-        //End -1
 
        // go through the initial age array, and depending on age, assign number to the right array
         for ( i = 0; i < age.length; i++) {
             if (age[i]<18){
-                minor[i] = age[i];
+                minorNum++;
             }
             else if ((age[i] >= 18) && (age[i] < 65)){
-                major[i] = age[i];
+                majorNum++;
+
             }
             else{
-                senior[i] = age[i];
+                seniorNum++;
+
             }
         }
         //end grouping
+        int minor[] = new int[minorNum];
+        int major[] = new int[majorNum];
+        int senior[] = new int[seniorNum];
 
+        minorNum = 0;
+        majorNum = 0;
+        seniorNum = 0;
 
-       //Start getting Putting information into the string for each grouping
-        for(int anAge : minor){
-            if (anAge >=0){
-            minorAge += anAge + " ";}
+        for ( i = 0; i < age.length; i++) {
+            if (age[i]<18){
+
+                minor[minorNum] = age[i];
+                minorNum++;
+            }
+            else if ((age[i] >= 18) && (age[i] < 65)){
+
+                major[majorNum] = age[i];
+                majorNum++;
+            }
+            else{
+
+                senior[seniorNum] = age[i];
+                seniorNum++;
+
+            }
         }
-        for(int anAge : major){
-            if (anAge >=0){
-                majorAge += anAge + " ";}
-        }
 
-        for(int anAge : senior){
-            if (anAge >=0){
-                seniorAge += anAge + " ";}
-        }
-        //end String manipulation
 
-        //start printing out each total
-        System.out.println("minorAge = " + minorAge);
-        System.out.println("seniorAge = " + seniorAge);
-        System.out.println("majorAge = " + majorAge);
+
+        System.out.println("Minor: " + Arrays.toString(minor));
+        System.out.println("Major: " +Arrays.toString(major));
+        System.out.println("Senior: " +Arrays.toString(senior));
         //end printout
 
     }
