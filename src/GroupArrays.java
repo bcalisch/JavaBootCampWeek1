@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 /**
  * 06/17/2015
  * TODO
@@ -62,7 +61,9 @@ public class GroupArrays {
 
             }
         }
-
+        minor = BetterSortLoop.sort(minor);
+        major = BetterSortLoop.sort(major);
+        senior = BetterSortLoop.sort(senior);
 
 
         System.out.println("Minor: " + Arrays.toString(minor));

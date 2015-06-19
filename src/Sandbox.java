@@ -3,17 +3,21 @@
  */
 public class Sandbox {
     public static void main(String[] args){
-        int age[] = new int[]{32, 25, 56, 12, 20, 22, 19, 54, 22};
-        int oldestAge = 100000;
+        int age = 18;
 
-        for (int i = 0; i < age.length ; i++) {
+        switch (age) {
 
-            if (oldestAge > age[i]){
+            case 18:
+                System.out.printf("You are eighteen");
+            case 25:
+                System.out.println("you are twenty five");
+                break;
+                default:
+                    System.out.printf("You are NOT twenty five or eighteen");
 
-                oldestAge =age[i];
-            }
+
+
         }
-        System.out.println("The youngest age is " + oldestAge);
 
     }
 }

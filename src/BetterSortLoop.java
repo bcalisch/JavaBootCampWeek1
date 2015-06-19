@@ -6,8 +6,37 @@ import java.util.Arrays;
 public class BetterSortLoop {
 
     public static void main(String[] args){
-        int age[] = new int[]{101,5,1,3,2,2,19, 5, 2, 32, 25,1, 56, 19,12,56,0,-1,-20, 20, 22, 19, 54, 22,65};
-       // int sortedAge[] = new int[age.length];
+//        float totalTimes = 100;
+//        final long startTime = System.currentTimeMillis();
+//        for (int k = 0; k < totalTimes; k++) {
+//            // Do something
+
+            int age[] = new int[]{101, 5, 1, 3, 2, 2, 19, 5, 2, 32, 25, 1, 56, 19, 12, 56, 0, -1, -20, 20, 22, 19, 54, 22, 65};
+
+        sort(age);
+
+        age = sort(age);
+
+
+
+
+
+        System.out.println(Arrays.toString(age));
+
+
+//        }
+//        final long endTime = System.currentTimeMillis();
+//        System.out.println("Total execution time: " + ((endTime - startTime)) );
+    }
+
+    public static int[] sort(int[] array){
+//        float totalTimes = 100;
+//        final long startTime = System.currentTimeMillis();
+//        for (int k = 0; k < totalTimes; k++) {
+//            // Do something
+
+        int age[] = Arrays.copyOf(array, array.length);
+        // int sortedAge[] = new int[age.length];
         int tempNumber;
         int i;
         //Now go through the original array twice, one to get the number to be sorted, and another
@@ -24,10 +53,13 @@ public class BetterSortLoop {
 
             }
 
-            //Finally, go through each item and add it to a string
+
 
         }
-        System.out.println(Arrays.toString(age));
 
+        return age;
+//        }
+//        final long endTime = System.currentTimeMillis();
+//        System.out.println("Total execution time: " + ((endTime - startTime)) );
     }
 }

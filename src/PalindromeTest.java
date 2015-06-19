@@ -8,6 +8,7 @@ public class PalindromeTest {
     public static void main(String[] args) {
         System.out.println("Palindrome Test = " + args[0]);
         String input = args[0].toLowerCase();
+        input = input.replaceAll(" ", "");
         String sentence = "";
         boolean palindrome = true;
 
