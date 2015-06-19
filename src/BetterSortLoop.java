@@ -13,7 +13,7 @@ public class BetterSortLoop {
 
             int age[] = new int[]{101, 5, 1, 3, 2, 2, 19, 5, 2, 32, 25, 1, 56, 19, 12, 56, 0, -1, -20, 20, 22, 19, 54, 22, 65};
 
-        sort(age);
+       // sort(age);
 
         age = sort(age);
 

@@ -13,7 +13,7 @@ import java.util.Arrays;
  */
 public class GroupArrays {
     public static void main(String[] args){
-        int age[] = new int[]{101,5,1,3,2,0,19, 5,18, 2, 32, 25, 56, 12,56, 20, 22, 19, 54, 22,65};
+        int age[] = new int[]{101,5,1,3,2,0,19,80,75,88, 5,18, 2, 32, 25, 56, 12,56, 20, 22, 19, 54, 22,65};
         int i;
         int majorNum = 0;
         int minorNum =0;
@@ -69,7 +69,6 @@ public class GroupArrays {
         System.out.println("Minor: " + Arrays.toString(minor));
         System.out.println("Major: " +Arrays.toString(major));
         System.out.println("Senior: " +Arrays.toString(senior));
-        //end printout
 
     }
 }
