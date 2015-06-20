@@ -9,6 +9,9 @@ public class AgeArrays {
                 int oldestAge = 0;
 
                 for (int i = 0; i < age.length ; i++) {
+                        /*every time an age is found that is bigger than
+                        * the number oldestAge change oldestAge to that number
+                        * */
 
                         if (oldestAge < age[i]){
 

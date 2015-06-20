@@ -9,14 +9,11 @@
 * */
 public class CapitaliseSentenceTest {
     public static void main(String[] args){
-//        float totalTimes = 10000;
-//        final long startTime = System.currentTimeMillis();
-//        for (int k = 0; k < totalTimes; k++) {
-////            // Do something
 
         System.out.println("Sentence = " +args[0]);
         String input = args[0];
         String sentence = "";
+        //Start by putting the string to lowercase
         input = input.toLowerCase();
         String[] words = input.split(" ");
         for (int i = 0; i < words.length; i++) {

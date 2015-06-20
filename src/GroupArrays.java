@@ -15,12 +15,15 @@ public class GroupArrays {
     public static void main(String[] args){
         int age[] = new int[]{101,5,1,3,2,0,19,80,75,88, 5,18, 2, 32, 25, 56, 12,56, 20, 22, 19, 54, 22,65};
         int i;
+        int minor[] = null;
+        int major[] = null;
+        int senior[] = null;
         int majorNum = 0;
         int minorNum =0;
         int seniorNum =0;
 
 
-       // go through the initial age array, and depending on age, assign number to the right array
+       // go through the initial age array, and depending on age, increment counters to determine size of arrays
         for ( i = 0; i < age.length; i++) {
             if (age[i]<18){
                 minorNum++;
@@ -35,14 +38,17 @@ public class GroupArrays {
             }
         }
         //end grouping
-        int minor[] = new int[minorNum];
-        int major[] = new int[majorNum];
-        int senior[] = new int[seniorNum];
+        minor = new int[minorNum];
+        major = new int[majorNum];
+        senior= new int[seniorNum];
 
+        //reset counters for upcoming for loop
         minorNum = 0;
         majorNum = 0;
         seniorNum = 0;
 
+        //We are going through array and depending on age, put the value into appropriate array
+        //increment counter after doing this.
         for ( i = 0; i < age.length; i++) {
             if (age[i]<18){
 
@@ -61,6 +67,8 @@ public class GroupArrays {
 
             }
         }
+
+        //Use sorting class from class BetterSortLoop to sort arrays
         minor = BetterSortLoop.sort(minor);
         major = BetterSortLoop.sort(major);
         senior = BetterSortLoop.sort(senior);
